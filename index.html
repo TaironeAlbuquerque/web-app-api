@@ -1,53 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Postland App</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    
+    <!-- modify -->
+    <title>Title</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#33ffcc"/>
+    <!-- /manifest -->
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container mx-auto flex items-center justify-between p-4">
-      <h1 class="text-2xl font-bold">Postland App</h1>
-      <input type="text" id="search" placeholder="Procurar..." class="search-input" aria-label="Search">
-      <h3 class="text-1xl font-bold">Sua voz tem lugar!</h3>
-    </div>
-  </header>
+    
+    <h1>it works.</h1>
 
-  <!-- Main Content -->
-  <main class="container mx-auto p-6">
-    <section class="add-post bg-white rounded-lg shadow-lg p-6 mb-6">
-      <h2 class="text-xl font-semibold mb-4">Adicionar Novos Posts</h2>
-      <form id="post-form">
-        <input type="text" id="title" placeholder="Título" class="input-field mb-2" aria-label="Post Title">
-        <textarea id="body" placeholder="Descrição" class="input-field mb-4" aria-label="Post Body"></textarea>
-        <button type="submit" id="create" class="create-button">Criar Post</button>
-      </form>
-      <div id="form-feedback" class="hidden mt-4"></div>
-    </section>
-
-    <section id="edit-post" class="hidden bg-white rounded-lg shadow-lg p-6 mb-6">
-        <h2 class="text-xl font-semibold mb-4">Editar Post</h2>
-        <form id="edit-form">
-            <input type="text" id="edit-title" placeholder="Título" class="input-field mb-2" aria-label="Post Title">
-            <textarea id="edit-body" placeholder="Descrição" class="input-field mb-4" aria-label="Post Body"></textarea>
-            <button type="submit" id="update" class="update-button">Update</button>
-            <button type="button" id="cancel-update" class="cancel-button">Cancel</button>
-        </form>
-        <div id="edit-feedback" class="hidden mt-4"></div>
-    </section>
-
-    <section id="posts">
-      <!-- Posts will be displayed here -->
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+    <!-- load service worker -->
+    <script src="app.js"></script>
+    <!-- /load service worker -->
 </body>
-
 </html>
