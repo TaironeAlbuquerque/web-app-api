@@ -10,37 +10,14 @@
 </head>
 <body>
   <div id="app">
-      <h1>Task Manager</h1>
-      <div id="auth">
-        <div class="login-container">
-            <div class="login-form">
-                <h1>Login</h1>
-                <form id="login-form">
-                    <label for="login-email">Email:</label>
-                    <input type="email" id="login-email" name="email" required>
-    
-                    <label for="login-password">Senha:</label>
-                    <input type="password" id="login-password" name="password" required>
-    
-                    <button type="submit">Entrar</button>
-    
-                    <p>Não tem uma conta? <a href="/register">Cadastre-se</a></p>
-                </form>
-            </div>
-        </div>
-
-        <p>Não tem uma conta? <a href="/register">Cadastre-se</a></p>
-      </div>
-
-      <div id="task-manager">
-          <form id="task-form">
-              <input type="text" id="task-input" placeholder="Nova tarefa">
-              <button type="submit">Adicionar Tarefa</button>
-          </form>
-          <ul id="task-list"></ul>
-      </div>
+    <h1>Tarefas a Fazer</h1>
+    <form id="task-form">
+      <input type="text" id="title" placeholder="Nome da Tarefa" required>
+      <textarea id="description" placeholder="Descrição da Tarefa" required></textarea>
+      <button type="submit">Adicionar Tarefa</button>
+    </form>
+    <ul id="task-list"></ul>
   </div>
-
   <script src="./script.js"></script>
 </body>
 </html>
