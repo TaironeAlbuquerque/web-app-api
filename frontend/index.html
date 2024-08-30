@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helena: Do Now, Son!</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon-192x192.png" type="image/png">
+  <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('sw.js');
+        });
+      }
+  </script>
+</head>
+<body>
+  <div class="container">
+      <h1>Tarefas de Casa</h1>
+      <div class="form-group">
+          <input type="text" id="taskInput" placeholder="Nome da tarefa">
+          <input type="date" id="dueDateInput" placeholder="Data de Entrega">
+          <button id="addTaskBtn">Adicionar Tarefa</button>
+      </div>
+      <div class="total">
+        <h3>Tarefas Restantes: <span id="taskCount">0</span></h3>
+    </div>
+      <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
