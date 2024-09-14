@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monumentos | Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <h1>Tutorial</h1>
+        </div>
+        <div class="links" id="menuLinks">
+            <a href="index.html">Inicio</a>
+            <a href="tutorial.html">Tutorial</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Como tirar fotos?</h2>
+        <iframe width="360" height="315" src="https://www.youtube.com/watch?v=JXbomFfroj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Quais lugares visitar em Recife?</h2>
+        <iframe width="360" height="315" src="https://www.youtube.com/watch?v=O-TrNOHG99A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+   
+   <script>
+        function toggleMenu() {
+            const links = document.getElementById('menuLinks');
+            links.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
